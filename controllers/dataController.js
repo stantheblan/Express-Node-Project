@@ -1,4 +1,4 @@
-const Product = require('../models/products.js');
+const Product = require('../models/products');
 
 const dataController = {
   index(req, res, next){
@@ -22,7 +22,7 @@ const dataController = {
             msg: err.message
           })
         }else {
-          res.locals.data.Product = createdProduct
+          res.locals.data.product = createdProduct
           next()
         }
     });
@@ -34,7 +34,7 @@ const dataController = {
           msg: err.message
         })
       } else {
-        res.locals.data.Product = foundProduct
+        res.locals.data.product = foundProduct
         next()
       }
     })
@@ -46,7 +46,7 @@ const dataController = {
           msg: err.message
         })
       } else {
-        res.locals.data.Product = updatedProduct
+        res.locals.data.product = updatedProduct
         next()
       }
     });
@@ -58,7 +58,7 @@ const dataController = {
           msg: err.message
         })
       } else {
-        res.locals.data.Product = Product
+        res.locals.data.product = Product
         next()
       }
     });
