@@ -8,6 +8,12 @@ class New extends React.Component {
             <h1>New Product page</h1>
             {/* NOTE: action will be the route, method will be the HTTP verb */}
             <form action="/products" method="POST">
+              Name: <input type="text" name="name" /><br/>
+              Description: <input type="text" name="description" /><br/>
+              Image: <input type="text" name="img" /><br/>
+              Price: <input type="number" name="price" /><br/>
+              Quantity: <input type="number" name="qty" /><br/>              
+              <input type="submit" name="" value="Create Product"/>
             </form>
         </div>);
     }
