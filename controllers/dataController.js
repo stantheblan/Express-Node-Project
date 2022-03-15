@@ -7,7 +7,7 @@ const dataController = {
         res.status(404).send({
           msg: err.message
         })
-      }else {
+      } else {
         res.locals.data.products = allProducts
         next()
       }
@@ -21,7 +21,7 @@ const dataController = {
           res.status(404).send({
             msg: err.message
           })
-        }else {
+        } else {
           res.locals.data.product = createdProduct
           next()
         }
@@ -62,7 +62,19 @@ const dataController = {
         next()
       }
     });
-  }
+  },
+  buy(req, res, next){
+    Product.findByIdAndUpdate(req.params.id, {$inc: {qty: -1}}, { new: true }, (err, buyProd) => {
+      if(err){
+        res.status(404).send({
+          msg: err.message
+        })
+      } else {
+        res.locals.data.product = buyProd
+        next()
+      }
+    });
+  },
 }
 
 module.exports = dataController 

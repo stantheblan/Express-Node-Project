@@ -15,7 +15,7 @@ class Edit extends React.Component{
           Description: <input type="text" name="description" defaultValue={this.props.product.description}/><br/>
           Price: <input type="text" name="price" defaultValue={this.props.product.price}/><br/>
           Quantity: <input type="text" name="qty" defaultValue={this.props.product.qty}/><br/>              
-          <input type="submit" name="" value="Edit"/>
+            <input type="submit" value="Finish Edit"/>
         </form>
       </DefaultLayout>
       </div>);

@@ -11,8 +11,15 @@ render () {
             <image src={product.img}/><br/>
             Product Description: {product.description}<br/>
             Product Price: {product.price}<br/>
-            Product Quantity: {product.qty}<br/>
+            Product Quantity: {product.qty > 0 ? product.qty : 'Out of Stock'}<br/>
+            {/* =================================================================== */}
             <a href={`/products/${product._id}/edit`}>Edit This Product</a> <br/>
+            <form action={`/products/${product._id}?_method=PATCH`} method="POST">
+            {product.qty > 0 ? <input type="submit" value="    BUY   "/> : null}
+            </form>
+            <form action = {`/products/${product._id}?_method=DELETE`} method = "POST">
+                <input type = "submit" value = "DELETE"/>
+            </form>
         </div>
         );
     }
