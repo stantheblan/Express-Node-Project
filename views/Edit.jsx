@@ -5,7 +5,7 @@ const DefaultLayout = require('./layout/Default.jsx')
 class Edit extends React.Component{
   render() {
     return (
-      <div>
+      <div className="headDiv">
       <DefaultLayout title="Edit Page"> 
       <link rel="stylesheet" href="/css/app.css"/>         
       {/* See the Layout takes in a prop called Title and we pass Edit Page to it  note: comments can't go first or last in  jsx return*/}
@@ -13,9 +13,9 @@ class Edit extends React.Component{
           Name: <input type="text" name="name" defaultValue={this.props.product.name}/><br/>
           Image: <input type="text" name="img" defaultValue={this.props.product.img}/><br/>
           Description: <input type="text" name="description" defaultValue={this.props.product.description}/><br/>
-          Price: <input type="text" name="price" defaultValue={this.props.product.price}/><br/>
-          Quantity: <input type="text" name="qty" defaultValue={this.props.product.qty}/><br/>              
-            <input type="submit" value="Finish Edit"/>
+          Price: <input type="number" name="price" defaultValue={this.props.product.price} min="0"/><br/>
+          Quantity: <input type="number" name="qty" defaultValue={this.props.product.qty} min="0"/><br/>              
+            <input type="submit" value="Finish Edit" className="buttonC"/>
         </form>
       </DefaultLayout>
       </div>);

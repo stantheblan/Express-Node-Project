@@ -1,3 +1,43 @@
 html {
-    background-color: crimson;
+    background-color:rgb(0, 140, 255);
+}
+img {
+    
+    width: 250px;
+    height: 250px;
+}
+.productDiv {
+    text-align: center;
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-color:lightcoral;
+    border-width: 5px;
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.headDiv {
+    text-align: center;
+    background-color: darkkhaki;
+    margin: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-color:springgreen;
+    border-width: 5px;
+}
+.buttonC {
+    margin-top: 5px;
+}
+.nameC {
+    color:goldenrod
+}
+a {
+    color: deepskyblue;
+    
+}
+p {
+    color:yellowgreen;
 }

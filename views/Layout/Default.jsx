@@ -11,7 +11,7 @@ class DefaultLayout extends React.Component {
                     <title>{this.props.title}</title>
                 </head>
                 <body>
-                    <h1>{this.props.title}</h1>
+                    <h1> <a href={`/products`}>Home</a> / {this.props.title}</h1>
                     {/* This is where our other components will be injected */}
                     {this.props.children}
                 </body>
