@@ -11,8 +11,8 @@ render () {
                 <div><a href={product.img}><image src={product.img} id="imgID"/></a><br/></div>
                 
                 <p>Product Description: {product.description}</p>
-                <p>Product Price: {product.price}</p>
-                <p>Product Quantity: {product.qty > 0 ? product.qty : 'Out of Stock'}</p>
+                <p>Product Price: ${product.price.toLocaleString("en-US")}</p>
+                <p>Product Quantity: {product.qty > 0 ? product.qty.toLocaleString("en-US") : 'Out of Stock'}</p>
                 {/* =================================================================== */}
                 <a href={`/products/${product._id}/edit`}>Edit This Product</a> <br/>
                 <form action={`/products/${product._id}?_method=PATCH`} method="POST">
