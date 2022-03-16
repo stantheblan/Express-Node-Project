@@ -13,7 +13,7 @@ const seedProducts =
         qty: (484000)
     }, 
     {
-        name: '1943 1C',
+        name: '1943 Steel 1C',
         description: 'The 1943 silver colored penny is a wartime coin issue made of steel and coated with zinc. During World War II, the war effort required a lot of copper to make shell casings and munitions. In 1943 the penny was made out of zinc plated steel to save copper for the war effort.',
         img: 'https://images.pcgs.com/CoinFacts/39803108_198170506_800x800.jpg',
         price: (218500),
