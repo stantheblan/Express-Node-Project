@@ -8,7 +8,8 @@ render () {
                 <h1> <a href={`/products`}>Home</a> / Show Page</h1><br/>
             <div className="productDiv">
                 <h1 className='nameC'>{product.name}</h1>
-                <image src={product.img}/><br/>
+                <div><a href={product.img}><image src={product.img} id="imgID"/></a><br/></div>
+                
                 <p>Product Description: {product.description}</p>
                 <p>Product Price: {product.price}</p>
                 <p>Product Quantity: {product.qty > 0 ? product.qty : 'Out of Stock'}</p>
