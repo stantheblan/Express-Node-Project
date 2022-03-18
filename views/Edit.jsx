@@ -1,6 +1,6 @@
 const React = require('react');
 // As you can see we are using the app layout
-const DefaultLayout = require('./layout/Default.jsx')
+const DefaultLayout = require('./Layout/Default.jsx')
 
 class Edit extends React.Component{
     render() {
