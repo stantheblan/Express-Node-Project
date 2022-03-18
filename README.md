@@ -23,16 +23,16 @@ You can see my **Express Coin Shop** in action here:
 </a>
 
 Here are a few screenshots of my shop:
-1. Main page, a list of goals
+1. Main page
 ![index page](https://i.gyazo.com/e3ed5c7cc7fa4d08317c9dc2d25b022a.png)
 
-2. Creating a goal
+2. Show page
 ![show item page](https://i.gyazo.com/2dfac9112a75ab6f597386d0b453c7f7.png)
 
-3. Viewing one goal and it's habits
+3. Edit Page
 ![edit page](https://i.gyazo.com/b09009b19c388f66b3a22526929810c9.png)
 
-4. Viewing one goal and it's habits
+4. New Page
 ![new page](https://i.gyazo.com/b49f750ca8d0964986d881075cabb802.png)
 --------------------------------------------
 ## How to Install Sample Express Shop locally:
