@@ -13,15 +13,18 @@ render () {
                 <p>Product Description: {product.description}</p>
                 <p>Product Price: ${product.price.toLocaleString("en-US")}</p>
                 <p>Product Quantity: {product.qty > 0 ? product.qty.toLocaleString("en-US") : 'Out of Stock'}</p>
+                <form action = {`/products/${product._id}?_method=DELETE`} method = "POST">
+                    <input type = "submit" value = "DELETE" className="buttonC"/>
+                </form>
                 {/* =================================================================== */}
                 <a href={`/products/${product._id}/edit`}>Edit This Product</a> <br/>
                 <form action={`/products/${product._id}?_method=PATCH`} method="POST">
                 {product.qty > 0 ? <input type="submit" value="    BUY   " className="buttonC"/> : null}
                 </form>
-                <form action = {`/products/${product._id}?_method=DELETE`} method = "POST">
-                    <input type = "submit" value = "DELETE" className="buttonC"/>
-                </form>
             </div>
+            <footer className="footer">
+                <p>========= <a href="https://github.com/stantheblan/Express-Node-Project" target="_blank" >Stan 2022</a> =========</p>
+            </footer>
         </div>
         );
     }

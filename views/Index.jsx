@@ -22,6 +22,9 @@ class Index extends React.Component{
                         )
                     })}
                 </div>
+            <footer className="footer">
+                <p>========= <a href="https://github.com/stantheblan/Express-Node-Project" target="_blank" >Stan 2022</a> =========</p>
+            </footer>
             </div>
         )
     }

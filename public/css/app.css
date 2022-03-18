@@ -38,7 +38,6 @@ html {
 }
 a {
     color: deepskyblue;
-    
 }
 p {
     color:yellowgreen;
@@ -49,4 +48,12 @@ p {
 #imgID {
     max-width: 60vw;
     max-height: 40vh;
+}
+.footer p{
+    text-align: center;
+    color:rgb(0, 76, 138)
+}
+.footer a{
+    text-align: center;
+    color:rgb(0, 76, 138)
 }
