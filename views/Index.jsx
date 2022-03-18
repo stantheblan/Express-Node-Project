@@ -17,7 +17,6 @@ class Index extends React.Component{
                                 <p>Description: {product.description}</p>
                                 <p>Price: ${product.price.toLocaleString("en-US")}</p>
                                 <p>Quantity: {product.qty > 0 ? product.qty.toLocaleString("en-US") : 'Out of Stock'}</p>
-                                {/* Delete here */}
                             </div>
                         )
                     })}

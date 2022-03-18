@@ -7,7 +7,6 @@ class New extends React.Component {
         <link rel="stylesheet" href="/css/app.css"/>     
             
             <div><h1> <a href={`/products`}>Home</a> / New Product Page</h1></div>
-            {/* NOTE: action will be the route, method will be the HTTP verb */}
             <form action="/products" method="POST">
                 Name: <input type="text" name="name" /><br/>
                 Description: <input type="text" name="description" className="inputClass"/><br/>

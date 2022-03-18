@@ -16,7 +16,6 @@ render () {
                 <form action = {`/products/${product._id}?_method=DELETE`} method = "POST">
                     <input type = "submit" value = "DELETE" className="buttonC"/>
                 </form>
-                {/* =================================================================== */}
                 <a href={`/products/${product._id}/edit`}>Edit This Product</a> <br/>
                 <form action={`/products/${product._id}?_method=PATCH`} method="POST">
                 {product.qty > 0 ? <input type="submit" value="    BUY   " className="buttonC"/> : null}
