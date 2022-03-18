@@ -6,20 +6,17 @@ class Edit extends React.Component{
     render() {
         return (
             <div className="headDiv">
-            <DefaultLayout title="Edit Page"> 
-            <link rel="stylesheet" href="/css/app.css"/>
-                <form action={`/products/${this.props.product._id}?_method=PUT`} method="POST">
-                    Name: <input type="text" name="name" defaultValue={this.props.product.name}/><br/>
-                    Image: <input type="text" name="img" defaultValue={this.props.product.img}/><br/>
-                    Description: <input type="text" name="description" defaultValue={this.props.product.description}/><br/>
-                    Price: <input type="number" name="price" defaultValue={this.props.product.price} min="0"/><br/>
-                    Quantity: <input type="number" name="qty" defaultValue={this.props.product.qty} min="0"/><br/>              
-                    <input type="submit" value="Finish Edit" className="buttonC"/>
-                </form>
-            </DefaultLayout>
-            <footer className="footer">
-                <p>========= <a href="https://github.com/stantheblan/Express-Node-Project" target="_blank" >Stan 2022</a> =========</p>
-            </footer>
+                <DefaultLayout title="Edit Page"> 
+                    <link rel="stylesheet" href="/css/app.css"/>
+                    <form action={`/products/${this.props.product._id}?_method=PUT`} method="POST">
+                        Name: <input type="text" name="name" defaultValue={this.props.product.name}/><br/>
+                        Image: <input type="text" name="img" defaultValue={this.props.product.img}/><br/>
+                        Description: <input type="text" name="description" defaultValue={this.props.product.description}/><br/>
+                        Price: <input type="number" name="price" defaultValue={this.props.product.price} min="0"/><br/>
+                        Quantity: <input type="number" name="qty" defaultValue={this.props.product.qty} min="0"/><br/>              
+                        <input type="submit" value="Finish Edit" className="buttonC"/>
+                    </form>
+                </DefaultLayout>
             </div>
         );
 }

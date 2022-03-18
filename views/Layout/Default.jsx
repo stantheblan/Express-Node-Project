@@ -15,6 +15,9 @@ class DefaultLayout extends React.Component {
                     {/* This is where our other components will be injected */}
                     {this.props.children}
                 </body>
+                <footer className="footer">
+                    <p>========= <a href="https://github.com/stantheblan/Express-Node-Project" target="_blank" >Stan 2022</a> =========</p>
+                </footer>
             </html>
         )
     }
